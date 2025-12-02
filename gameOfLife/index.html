@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Conway's Game of Life</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="center">
+            <h1>Conway's Game of Life</h1>
+            <h2>Generation: <span id="genText">0</span></h2>
+        </header>
+
+        <section class="controls center">
+            <label>
+                Rows: <input type="number" id="rows" value="20" min="10" />
+            </label>
+            <label>
+                Columns: <input type="number" id="cols" value="20" min="10" />
+            </label>
+            <button id="generate">Create Grid</button>
+        </section>
+
+        <main id="grid"></main>
+
+        <section class="actions center">
+            <button id="start">Start</button>
+            <button id="stop">Pause</button>
+            <button id="rand">Randomize</button>
+        </section>
+    </div>
+
+    <script type="module" src="controller.js"></script>
+    <script type="module" src="model.js"></script>
+    <script type="module" src="view.js"></script>
+</body>
+
+</html>
